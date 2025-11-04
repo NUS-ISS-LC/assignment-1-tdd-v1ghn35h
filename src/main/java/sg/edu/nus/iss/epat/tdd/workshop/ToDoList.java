@@ -8,7 +8,9 @@ public class ToDoList {
 
    public void addTask(Task task) {
       // Add code here
-      this.tasks.put(task.getDescription(), task);
+      if (task != null) {
+         this.tasks.put(task.getDescription(), task);
+      }
    }
 
    public void completeTask(String description) {
